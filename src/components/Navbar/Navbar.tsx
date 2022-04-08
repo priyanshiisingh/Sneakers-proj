@@ -9,19 +9,34 @@ import {
   MenuList,
   MenuItem,
   MenuDivider,
-  useColorModeValue,
   Stack,
   Center,
 } from "@chakra-ui/react";
 import imageAvatar from "../../assets/images/image-avatar.png";
-import MainMenu from "../Menu/Menu";
+import { MainMenu } from "../Menu/Menu";
+import DrawerComp from "../Drawer/Drawer";
+import { Div } from "../../assets/styles/NavbarStyles";
 
 export default function Nav() {
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box
+        borderBottomStyle={"solid"}
+        borderBottomWidth={1}
+        borderBottomColor={"grey"}
+        mx={12}
+        py={7}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <MainMenu />
+          <Stack
+            direction={"row"}
+            spacing={7}
+            alignItems={"center"}
+            justifyContent={"center"}>
+            <Div>
+              <DrawerComp />
+            </Div>
+            <MainMenu />
+          </Stack>
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Menu>
@@ -53,7 +68,7 @@ export default function Nav() {
                 variant="unstyled"
                 cursor={"pointer"}
                 minW={0}>
-                <Avatar size={"sm"} src={imageAvatar} />
+                <Avatar size={"md"} src={imageAvatar} />
               </Button>
             </Stack>
           </Flex>

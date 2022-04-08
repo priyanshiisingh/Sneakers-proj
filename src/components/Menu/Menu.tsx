@@ -1,5 +1,30 @@
 import React from "react";
-import { Box, Link, Stack } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
+import { UL, LI, Link } from "../../assets/styles/MenuStyles";
+
+function List() {
+  return (
+    <Stack direction={"row"} spacing={6}>
+      <UL>
+        <LI>
+          <Link href="">Collections</Link>
+        </LI>
+        <LI>
+          <Link href="">Men</Link>
+        </LI>
+        <LI>
+          <Link href="">Women</Link>
+        </LI>
+        <LI>
+          <Link href="">About</Link>
+        </LI>
+        <LI>
+          <Link href="">Contact</Link>
+        </LI>
+      </UL>
+    </Stack>
+  );
+}
 
 const MainMenu = () => {
   return (
@@ -19,25 +44,10 @@ const MainMenu = () => {
           </svg>
         </Link>
 
-        <Stack direction={"row"} spacing={7}>
-          <ul className="mainmenu">
-            <li>
-              <Link href="">Home</Link>
-            </li>
-            <li>
-              <Link href="">Home</Link>
-            </li>
-            <li>
-              <Link href="">Home</Link>
-            </li>
-            <li>
-              <Link href="">Home</Link>
-            </li>
-          </ul>
-        </Stack>
+        <List />
       </Stack>
     </Box>
   );
 };
 
-export default MainMenu;
+export { MainMenu, List };
