@@ -8,7 +8,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { UL, LI, Link } from "../../assets/styles/DrawerStyles";
-import "../../assets/styles/drawer.css";
+import "../../assets/styles/buttonStyles.css";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 function DrawerComp() {

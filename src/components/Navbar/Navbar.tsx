@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   Flex,
   Avatar,
   Button,
@@ -15,23 +14,14 @@ import {
 import imageAvatar from "../../assets/images/image-avatar.png";
 import { MainMenu } from "../Menu/Menu";
 import DrawerComp from "../Drawer/Drawer";
-import { Div } from "../../assets/styles/NavbarStyles";
+import { Div, Box } from "../../assets/styles/NavbarStyles";
 
 export default function Nav() {
   return (
     <>
-      <Box
-        borderBottomStyle={"solid"}
-        borderBottomWidth={1}
-        borderBottomColor={"grey"}
-        mx={12}
-        py={7}>
+      <Box>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Stack
-            direction={"row"}
-            spacing={7}
-            alignItems={"center"}
-            justifyContent={"center"}>
+          <Stack direction={"row"} alignItems={"center"}>
             <Div>
               <DrawerComp />
             </Div>
@@ -40,7 +30,7 @@ export default function Nav() {
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Menu>
-                <MenuButton as={Button} variant="unstyled">
+                <MenuButton as={Button} variant="unstyled" className="cbtn">
                   <svg
                     width="22"
                     height="20"
@@ -66,6 +56,7 @@ export default function Nav() {
               <Button
                 rounded={"full"}
                 variant="unstyled"
+                className="cbtn"
                 cursor={"pointer"}
                 minW={0}>
                 <Avatar size={"md"} src={imageAvatar} />

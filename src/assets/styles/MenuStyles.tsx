@@ -5,7 +5,7 @@ const UL = styled.ul`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 900px) {
+  @media (max-width: 970px) {
     display: none;
   }
 `;
@@ -15,7 +15,13 @@ const LI = styled.li`
   margin: 18px;
 `;
 
-const Link = styled.a`
-  text-decoration: none;
+const LinkStyle = styled.a`
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 46px;
+    text-decoration-color: #ff7900;
+    text-decoration-thickness: 5px;
+  }
 `;
-export { UL, LI, Link };
+export { UL, LI, LinkStyle };
