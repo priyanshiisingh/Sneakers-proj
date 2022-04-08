@@ -7,6 +7,14 @@ const Div = styled.div`
   }
 `;
 
+const SVG = styled.svg`
+  fill: #69707d;
+  fill-rule: nonzero;
+  &:focus {
+    fill: black;
+  }
+`;
+
 const Box = styled.div`
   border-bottom: 1px solid #ced4da;
   margin-right: 10%;
@@ -25,4 +33,4 @@ const Box = styled.div`
     padding-left: 8px;
   }
 `;
-export { Div, Box };
+export { Div, Box, SVG };

@@ -10,3 +10,7 @@
 .cbtn:hover {
     background: none !important;
 }
+
+.svgBtn:focus {
+    fill: black;
+}

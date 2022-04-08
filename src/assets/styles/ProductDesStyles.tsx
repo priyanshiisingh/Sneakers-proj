@@ -10,7 +10,7 @@ const SecondaryDiv = styled.div`
   display: flex;
   flex-direction: row;
   border: 1px solid black;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 15% 5% 15%;
   width: 100%;
   @media (max-width: 970px) {
     flex-direction: column;
