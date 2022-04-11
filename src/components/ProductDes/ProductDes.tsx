@@ -122,8 +122,8 @@ const ProductDes = () => {
                   <Text color="white">Add to cart</Text>
                 </Button>
               </ControlBtn>
-              <ModalCont />
             </Controls>
+            <ModalCont />
           </InfoDiv>
         </TertiaryDiv>
       </SecondaryDiv>
