@@ -1,0 +1,15 @@
+.custom-indicator {
+    bottom: -65px;
+}
+
+.custom-indicator li {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #ff9100;
+}
+
+.custom-indicator li.slick-active {
+    filter: grayscale(0%);
+    opacity: 0.5;
+}
