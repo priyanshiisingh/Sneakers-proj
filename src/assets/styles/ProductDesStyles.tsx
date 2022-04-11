@@ -107,6 +107,26 @@ const Controls = styled.div`
   }
 `;
 
+const Ranger = styled.div`
+  background: #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3;
+  width: 35%;
+  @media (max-width: 970px) {
+    width: 100%;
+  }
+`;
+
+const ControlBtn = styled.div`
+  width: 60%;
+  @media (max-width: 970px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+`;
+
 export {
   PrimaryDiv,
   SecondaryDiv,
@@ -120,4 +140,6 @@ export {
   StrikedPrice,
   Pricing,
   Controls,
+  Ranger,
+  ControlBtn,
 };

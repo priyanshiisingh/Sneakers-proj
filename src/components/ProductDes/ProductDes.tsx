@@ -12,6 +12,8 @@ import {
   StrikedPrice,
   Pricing,
   Controls,
+  Ranger,
+  ControlBtn,
 } from "../../assets/styles/ProductDesStyles";
 import Carousel from "../Carousels/Carousel";
 import MobCarousel from "../Carousels/MobCarousel";
@@ -67,7 +69,7 @@ const ProductDes = () => {
             </Pricing>
 
             <Controls>
-              <Box background="#e9ecef" borderRadius="3" width="35%">
+              <Ranger>
                 <Button className="cbtn">
                   <svg
                     width="12"
@@ -99,8 +101,8 @@ const ProductDes = () => {
                     <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#b" />
                   </svg>
                 </Button>
-              </Box>
-              <Box width="60%">
+              </Ranger>
+              <ControlBtn>
                 <Button
                   background="#ff7900"
                   variant="solid"
@@ -118,7 +120,7 @@ const ProductDes = () => {
                   </svg>
                   <Text color="white">Add to cart</Text>
                 </Button>
-              </Box>
+              </ControlBtn>
             </Controls>
           </InfoDiv>
         </TertiaryDiv>
