@@ -21,6 +21,7 @@ const Carousel = () => {
       />
       <Slider
         autoplay={false}
+        arrows={false}
         dots
         initialSlide={0}
         infinite
