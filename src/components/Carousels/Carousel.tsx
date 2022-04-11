@@ -22,6 +22,7 @@ const Carousel = () => {
       <Slider
         autoplay={false}
         dots
+        arrows={false}
         initialSlide={0}
         infinite
         customPaging={(i) => {

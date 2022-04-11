@@ -7,8 +7,8 @@ import {
   ProductName,
   ProductDescription,
   InfoDiv,
+  CraouselDiv,
 } from "../../assets/styles/ProductDesStyles";
-import { Box } from "@chakra-ui/react";
 import Carousel from "../Carousels/Carousel";
 
 const ProductDes = () => {
@@ -16,15 +16,18 @@ const ProductDes = () => {
     <PrimaryDiv>
       <SecondaryDiv>
         <TertiaryDiv>
-          <Box width={"50%"}>
+          <CraouselDiv>
             <Carousel />
-          </Box>
+          </CraouselDiv>
         </TertiaryDiv>
 
         <TertiaryDiv>
           <InfoDiv>
             <ColouredHeader>SNEAKER COMPANY</ColouredHeader>
-            <ProductName>Fall Limited Edition Sneakers</ProductName>
+            <ProductName>
+              Fall Limited Edition <br />
+              Sneakers
+            </ProductName>
             <ProductDescription>
               These low-profile sneakers are your perfect casual wear companion.
               Featuring a durable rubber outer sole, they'll withstand
