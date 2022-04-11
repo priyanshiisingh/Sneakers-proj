@@ -14,3 +14,12 @@
 .svgBtn:focus {
     fill: black;
 }
+
+.cartbtn:focus {
+    box-shadow: none !important;
+    background: #ff7900 !important;
+}
+
+.cartbtn:hover {
+    background: #ff7900 !important;
+}

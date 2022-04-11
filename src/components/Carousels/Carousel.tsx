@@ -28,13 +28,13 @@ const Carousel = () => {
         customPaging={(i) => {
           return (
             <div>
-              <img src={thumbnailData[i]} alt="" />
+              <img src={thumbnailData[i]} alt="" className="image" />
             </div>
           );
         }}
         dotsClass="slick-dots custom-indicator">
         {displayData.map((item) => (
-          <img src={item} alt="" style={{ width: "100%", height: "40vh" }} />
+          <img src={item} alt="" className="image" />
         ))}
       </Slider>
     </div>

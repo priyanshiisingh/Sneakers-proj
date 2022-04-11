@@ -37,6 +37,7 @@ const ColouredHeader = styled.p`
   font-size: 11px;
   letter-spacing: 2px;
   margin-bottom: 10px;
+  margin-top: 20px;
 `;
 
 const ProductName = styled.h3`
@@ -50,6 +51,7 @@ const ProductName = styled.h3`
 const ProductDescription = styled.p`
   min-width: auto;
   color: #6c757d;
+  margin-bottom: 20px;
   @media (min-width: 1024px) {
     max-width: 400px;
   }
@@ -62,7 +64,7 @@ const InfoDiv = styled.div`
   }
 `;
 
-const CraouselDiv = styled.div`
+const CarouselDiv = styled.div`
   width: 330px;
   @media (min-width: 1280px) {
     width: 450px;
@@ -70,6 +72,38 @@ const CraouselDiv = styled.div`
   @media (max-width: 970px) {
     width: 100%;
     max-height: 50%;
+  }
+`;
+
+const ProductPrice = styled.span`
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: black;
+`;
+
+const StrikedPrice = styled.span`
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #bcb8b1;
+`;
+
+const Pricing = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+  @media (max-width: 970px) {
+    flex-direction: row;
+  }
+`;
+
+const Controls = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  @media (max-width: 970px) {
+    flex-direction: column;
   }
 `;
 
@@ -81,5 +115,9 @@ export {
   ProductName,
   ProductDescription,
   InfoDiv,
-  CraouselDiv,
+  CarouselDiv,
+  ProductPrice,
+  StrikedPrice,
+  Pricing,
+  Controls,
 };
