@@ -17,6 +17,7 @@ import {
 } from "../../assets/styles/ProductDesStyles";
 import Carousel from "../Carousels/Carousel";
 import MobCarousel from "../Carousels/MobCarousel";
+import ModalCont from "../Modal/ModalCont";
 import { Badge, Box, Text, Button } from "@chakra-ui/react";
 import "../../assets/styles/buttonStyles.css";
 
@@ -121,6 +122,7 @@ const ProductDes = () => {
                   <Text color="white">Add to cart</Text>
                 </Button>
               </ControlBtn>
+              <ModalCont />
             </Controls>
           </InfoDiv>
         </TertiaryDiv>

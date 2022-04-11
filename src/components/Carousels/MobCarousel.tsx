@@ -4,13 +4,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { displayData } from "./data";
 import "../../assets/styles/CarouselStyles.css";
-import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
 function SampleNextArrow(props: any) {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ChevronRightIcon color="#000" />
+      <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m2 1 8 8-8 8"
+          stroke="#1D2026"
+          stroke-width="3"
+          fill="none"
+          fill-rule="evenodd"
+        />
+      </svg>
     </div>
   );
 }
@@ -19,7 +26,15 @@ function SamplePrevArrow(props: any) {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ChevronLeftIcon color="#000" />
+      <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11 1 3 9l8 8"
+          stroke="#1D2026"
+          stroke-width="3"
+          fill="none"
+          fill-rule="evenodd"
+        />
+      </svg>
     </div>
   );
 }
