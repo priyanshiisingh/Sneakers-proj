@@ -6,10 +6,26 @@
     width: 200px;
     height: 200px;
     object-fit: contain;
-    border: 2px solid #ff9100;
 }
 
 .custom-indicator li.slick-active {
-    filter: grayscale(0%);
     opacity: 0.5;
+    border: 2px solid #ff9100;
+}
+
+.full {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 970px) {
+    .full {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }

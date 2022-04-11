@@ -63,13 +63,13 @@ const InfoDiv = styled.div`
 `;
 
 const CraouselDiv = styled.div`
-  width: 350px;
+  width: 330px;
   @media (min-width: 1280px) {
     width: 450px;
   }
   @media (max-width: 970px) {
     width: 100%;
-    max-height: 100px;
+    max-height: 50%;
   }
 `;
 

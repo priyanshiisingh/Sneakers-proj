@@ -10,6 +10,7 @@ import {
   CraouselDiv,
 } from "../../assets/styles/ProductDesStyles";
 import Carousel from "../Carousels/Carousel";
+import MobCarousel from "../Carousels/MobCarousel";
 
 const ProductDes = () => {
   return (
@@ -17,7 +18,12 @@ const ProductDes = () => {
       <SecondaryDiv>
         <TertiaryDiv>
           <CraouselDiv>
-            <Carousel />
+            <div className="full">
+              <Carousel />
+            </div>
+            <div className="mobile">
+              <MobCarousel />
+            </div>
           </CraouselDiv>
         </TertiaryDiv>
 
@@ -31,7 +37,7 @@ const ProductDes = () => {
             <ProductDescription>
               These low-profile sneakers are your perfect casual wear companion.
               Featuring a durable rubber outer sole, they'll withstand
-              everything the weather can offer
+              everything the weather can offer.
             </ProductDescription>
           </InfoDiv>
         </TertiaryDiv>
