@@ -115,8 +115,17 @@ const Ranger = styled.div`
   align-items: center;
   border-radius: 3;
   width: 35%;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
   @media (max-width: 970px) {
     width: 100%;
+  }
+`;
+
+const RangerSvg = styled.svg`
+  &:hover {
+    opacity: 0.7;
   }
 `;
 
@@ -142,5 +151,6 @@ export {
   Pricing,
   Controls,
   Ranger,
+  RangerSvg,
   ControlBtn,
 };
