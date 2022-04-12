@@ -16,7 +16,7 @@ const ModalCont = () => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent background={"transparent"}>
           <ModalCarousel />
         </ModalContent>
       </Modal>

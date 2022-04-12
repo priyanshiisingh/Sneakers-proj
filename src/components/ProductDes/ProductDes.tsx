@@ -6,7 +6,6 @@ import {
   InfoDiv,
   Controls,
 } from "../../assets/styles/ProductDesStyles";
-import ModalCont from "../Modal/ModalCont";
 import "../../assets/styles/buttonStyles.css";
 
 //elements
@@ -15,6 +14,7 @@ import ProductInfo from "../ProductElements/ProductInfo";
 import PricingComp from "../CartElements/PricingComp";
 import RangerComp from "../CartElements/RangerComp";
 import AddToCartBtn from "../CartElements/AddToCartBtn";
+import ModalCont from "../Modal/ModalCont";
 
 const ProductDes = () => {
   return (
