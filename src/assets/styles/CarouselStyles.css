@@ -1,11 +1,12 @@
 .slick-dots {
-    text-align: center !important;
-    bottom: -130px !important;
-    height: fit-content;
+    justify-content: space-between !important;
+    display: flex !important;
+    align-items: center !important;
+    bottom: -100px !important;
 }
 
 .custom-indicator li {
-    width: 100px !important;
+    width: 90px !important;
     height: 100% !important;
     object-fit: contain;
 }
@@ -73,5 +74,11 @@
     }
     .mobile {
         display: block;
+    }
+}
+
+@media screen and (max-width: 970px) and (max-width: 1208) {
+    .slick-dots {
+        width: 50% !important;
     }
 }

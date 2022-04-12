@@ -4,6 +4,7 @@ const PrimaryDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 `;
 
 const SecondaryDiv = styled.div`
@@ -25,9 +26,10 @@ const TertiaryDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-left: 100px;
   @media (max-width: 970px) {
     width: 100%;
+    margin-left: 0px;
   }
 `;
 
@@ -37,16 +39,16 @@ const ColouredHeader = styled.p`
   font-size: 11px;
   letter-spacing: 2px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 `;
 
 const ProductName = styled.h3`
   font-weight: 700;
-  font-size: 2em;
-  line-height: 35px;
+  font-size: 2.5em;
+  line-height: 45px;
   color: black;
   margin-bottom: 25px;
-  max-width: 70%;
+  max-width: 90%;
 `;
 
 const ProductDescription = styled.p`
@@ -54,22 +56,20 @@ const ProductDescription = styled.p`
   color: #6c757d;
   margin-bottom: 20px;
   @media (min-width: 1024px) {
-    max-width: 400px;
+    max-width: 470px;
   }
 `;
 
 const InfoDiv = styled.div`
   min-width: 50%;
   @media (max-width: 970px) {
-    width: 95%;
+    max-width: 95%;
   }
 `;
 
 const CarouselDiv = styled.div`
-  width: 330px;
-  @media (min-width: 1280px) {
-    width: 450px;
-  }
+  width: 450px;
+
   @media (max-width: 970px) {
     width: 100%;
     max-height: 50%;

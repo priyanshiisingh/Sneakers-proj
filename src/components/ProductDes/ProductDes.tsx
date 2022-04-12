@@ -20,10 +20,8 @@ const ProductDes = () => {
   return (
     <PrimaryDiv>
       <SecondaryDiv>
-        <TertiaryDiv>
-          {/* Carousel component */}
-          <CarouselComp />
-        </TertiaryDiv>
+        {/* Carousel component */}
+        <CarouselComp />
 
         <TertiaryDiv>
           <InfoDiv>
