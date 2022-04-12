@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { displayData, thumbnailData } from "./data";
 import "../../assets/styles/CarouselStyles.css";
 
+import "../../assets/styles/buttonStyles.css";
+
 const Carousel = () => {
   return (
     <div>
@@ -19,6 +21,7 @@ const Carousel = () => {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
+
       <Slider
         autoplay={false}
         arrows={false}
@@ -34,7 +37,9 @@ const Carousel = () => {
         }}
         dotsClass="slick-dots custom-indicator">
         {displayData.map((item) => (
-          <img src={item} alt="" className="image" />
+          <button className="cbtn">
+            <img src={item} alt="" className="image" />
+          </button>
         ))}
       </Slider>
     </div>

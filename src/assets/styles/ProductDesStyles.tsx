@@ -46,6 +46,7 @@ const ProductName = styled.h3`
   line-height: 35px;
   color: black;
   margin-bottom: 25px;
+  max-width: 70%;
 `;
 
 const ProductDescription = styled.p`

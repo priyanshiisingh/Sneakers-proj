@@ -16,6 +16,10 @@
     border-radius: 18px;
 }
 
+.custom-indicator li:hover {
+    opacity: 0.8;
+}
+
 .full {
     display: block;
 }
@@ -61,7 +65,6 @@
 .slick-prev:before,
 .slick-next:before {
     content: "" !important;
-    color: black !important;
 }
 
 @media (max-width: 970px) {

@@ -10,7 +10,7 @@ const AddToCartBtn = () => {
         background="#ff7900"
         variant="solid"
         width="100%"
-        className="cartbtn"
+        className="cartbtn "
         size={"lg"}>
         <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
           <path

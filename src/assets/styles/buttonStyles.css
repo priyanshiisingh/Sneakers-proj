@@ -22,4 +22,9 @@
 
 .cartbtn:hover {
     background: #ff7900 !important;
+    opacity: 0.5;
+}
+
+.avatar:hover {
+    border: 2px solid #ff7900;
 }
