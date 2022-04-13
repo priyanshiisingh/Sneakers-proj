@@ -1,18 +1,17 @@
 import React from "react";
 import "../../assets/styles/buttonStyles.css";
+import { Text, Button, Badge, Box } from "@chakra-ui/react";
 
 //ranger imports
 import { Ranger, RangerSvg } from "../../assets/styles/ProductDesStyles";
 //add to cart imports
 import { ControlBtn } from "../../assets/styles/ProductDesStyles";
-import { Text, Button } from "@chakra-ui/react";
 //pricing imports
 import {
   ProductPrice,
   StrikedPrice,
   Pricing,
 } from "../../assets/styles/ProductDesStyles";
-import { Badge, Box } from "@chakra-ui/react";
 
 //ranger code
 interface RangerProps {
@@ -76,6 +75,45 @@ function RangerComp() {
   );
 }
 
+//pricing comp code
+interface PricingProps {
+  actualPrice: number;
+  discount: string;
+  strikedPrice: string;
+}
+
+const Costing = ({ actualPrice, discount, strikedPrice }: PricingProps) => {
+  return (
+    <Pricing>
+      <Box>
+        <ProductPrice>${actualPrice.toFixed(2)}</ProductPrice>
+        <Badge
+          ml="4"
+          mb="2"
+          colorScheme="orange"
+          color="#ff9100"
+          fontSize="0.8em"
+          px="2">
+          {discount}
+        </Badge>
+      </Box>
+      <Box>
+        <StrikedPrice>
+          <Text as="s">{strikedPrice}</Text>
+        </StrikedPrice>
+      </Box>
+    </Pricing>
+  );
+};
+
+function PricingComp() {
+  return (
+    <>
+      <Costing actualPrice={125} discount={"50%"} strikedPrice={"$250.00"} />
+    </>
+  );
+}
+
 //add to cart button
 const AddToCartBtn = () => {
   return (
@@ -100,49 +138,6 @@ const AddToCartBtn = () => {
     </ControlBtn>
   );
 };
-
-//pricing comp code
-interface PricingProps {
-  actualPrice: string;
-  discount: string;
-  strikedPrice: string;
-}
-
-const Costing = ({ actualPrice, discount, strikedPrice }: PricingProps) => {
-  return (
-    <Pricing>
-      <Box>
-        <ProductPrice>{actualPrice}</ProductPrice>
-        <Badge
-          ml="4"
-          mb="2"
-          colorScheme="orange"
-          color="#ff9100"
-          fontSize="0.8em"
-          px="2">
-          {discount}
-        </Badge>
-      </Box>
-      <Box>
-        <StrikedPrice>
-          <Text as="s">{strikedPrice}</Text>
-        </StrikedPrice>
-      </Box>
-    </Pricing>
-  );
-};
-
-function PricingComp() {
-  return (
-    <>
-      <Costing
-        actualPrice={"$125.00"}
-        discount={"50%"}
-        strikedPrice={"$250.00"}
-      />
-    </>
-  );
-}
 
 //exports
 export { AddToCartBtn, RangerComp, PricingComp };
