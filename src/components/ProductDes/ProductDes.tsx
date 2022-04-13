@@ -11,9 +11,11 @@ import "../../assets/styles/buttonStyles.css";
 //elements
 import CarouselComp from "../ProductElements/CarouselComp";
 import ProductInfo from "../ProductElements/ProductInfo";
-import PricingComp from "../CartElements/PricingComp";
-import RangerComp from "../CartElements/RangerComp";
-import AddToCartBtn from "../CartElements/AddToCartBtn";
+import {
+  RangerComp,
+  AddToCartBtn,
+  PricingComp,
+} from "../ProductSelection/ProductSelection";
 
 const ProductDes = () => {
   return (
