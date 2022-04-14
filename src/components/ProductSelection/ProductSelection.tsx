@@ -48,7 +48,7 @@ const RangerFunc = ({ quantity }: RangerProps) => {
         </defs>
         <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#a" />
       </RangerSvg>
-      {global}
+      {quantity}
       <RangerSvg
         width="12"
         height="12"
