@@ -13,6 +13,20 @@ import "../../assets/styles/CartMenuStyles.css";
 import CartContent from "./CartContent";
 
 const CartDropDown = () => {
+  // const [n, setN] = React.useState("");
+
+  // function CalcVal() {
+  //   let cont = document.getElementById("quantityId");
+  //   let val: any;
+
+  //   if (cont !== null) {
+  //     val = parseInt(cont.innerText);
+  //     setN(val);
+  //   } else {
+  //     console.log("error");
+  //   }
+  // }
+  // console.log("n", n);
   return (
     <Menu>
       <MenuButton>
@@ -26,6 +40,7 @@ const CartDropDown = () => {
           Cart
         </Text>
         <MenuDivider />
+        {/* {parseInt(n) > 0 ? <CartContent /> : <Text>Cart is empty</Text>} */}
         <CartContent />
       </MenuList>
     </Menu>

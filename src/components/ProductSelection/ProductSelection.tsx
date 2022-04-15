@@ -138,7 +138,7 @@ const AddToCartBtn = () => {
       calc = 125.0 * amo;
 
       amount.innerHTML = amo;
-      total.innerText = `$${calc}`;
+      total.innerText = `$${calc.toFixed(2)}`;
 
       setFinal(calc);
       setAmt(amo);

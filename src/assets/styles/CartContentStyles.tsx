@@ -19,7 +19,7 @@ const Image = styled.img`
 `;
 
 const ProductName = styled.p`
-  color: black;
+  color: grey;
   line-height: 2px;
 `;
 
