@@ -20,7 +20,7 @@ const Product = ({ productName }: ProductInfoProps) => {
     <VStack alignItems={"flex-start"}>
       <ProductName>{productName}</ProductName>
       <Text>
-        $125.00 * 3 <b>$375.00</b>
+        $125.00 * <span id="cartQuantity"></span> <b id="cartTotal"></b>
       </Text>
     </VStack>
   );
