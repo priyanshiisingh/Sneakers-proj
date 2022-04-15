@@ -126,6 +126,7 @@ const AddToCartBtn = () => {
     let amount = document.getElementById("cartQuantity");
     let total = document.getElementById("cartTotal");
     let visi = document.getElementById("isvisible");
+    let Tvisi = document.getElementById("textvisible");
 
     console.log(cont);
     let val: any;
@@ -145,10 +146,12 @@ const AddToCartBtn = () => {
       setAmt(amo);
       setNum(val);
 
-      if (visi !== null && amo !== 0) {
-        visi.style.visibility = "visible";
-      } else if (visi !== null && amo === 0) {
-        visi.style.visibility = "hidden";
+      if (visi !== null && Tvisi !== null && amo !== 0) {
+        visi.style.display = "block";
+        Tvisi.style.display = "none";
+      } else if (visi !== null && Tvisi !== null && amo === 0) {
+        visi.style.display = "none";
+        Tvisi.style.display = "block";
       }
     } else {
       console.log("error");

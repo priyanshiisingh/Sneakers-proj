@@ -40,5 +40,9 @@
 }
 
 #isvisible {
-    visibility: hidden;
+    display: none;
+}
+
+#textvisible {
+    display: block;
 }
