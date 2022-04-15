@@ -38,3 +38,7 @@
     background: #ff7900 !important;
     opacity: 0.5;
 }
+
+#isvisible {
+    visibility: hidden;
+}

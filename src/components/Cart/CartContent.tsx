@@ -37,7 +37,7 @@ function ProductInfo() {
 
 const CartContent = () => {
   return (
-    <PrimaryDiv>
+    <PrimaryDiv id="isvisible">
       <SecondaryDiv>
         <Image src={displayPic1} alt="display img" />
         <ProductInfo />

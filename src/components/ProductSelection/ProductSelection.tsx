@@ -125,6 +125,7 @@ const AddToCartBtn = () => {
     let cont = document.getElementById("quantityId");
     let amount = document.getElementById("cartQuantity");
     let total = document.getElementById("cartTotal");
+    let visi = document.getElementById("isvisible");
 
     console.log(cont);
     let val: any;
@@ -143,10 +144,17 @@ const AddToCartBtn = () => {
       setFinal(calc);
       setAmt(amo);
       setNum(val);
+
+      if (visi !== null && amo !== 0) {
+        visi.style.visibility = "visible";
+      } else if (visi !== null && amo === 0) {
+        visi.style.visibility = "hidden";
+      }
     } else {
       console.log("error");
     }
   }
+
   console.log("final", final);
   console.log("amt", amt);
   console.log("num", num);
@@ -157,7 +165,6 @@ const AddToCartBtn = () => {
         variant="solid"
         width="100%"
         className="cartbtn"
-        id="cartButton"
         onClick={Submit}>
         <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
           <path

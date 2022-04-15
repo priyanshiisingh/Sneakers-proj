@@ -41,6 +41,7 @@ const CartDropDown = () => {
         </Text>
         <MenuDivider />
         {/* {parseInt(n) > 0 ? <CartContent /> : <Text>Cart is empty</Text>} */}
+
         <CartContent />
       </MenuList>
     </Menu>
