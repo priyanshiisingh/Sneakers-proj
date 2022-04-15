@@ -28,3 +28,13 @@
 .avatar:hover {
     border: 2px solid #ff7900;
 }
+
+.checkoutBtn:focus {
+    box-shadow: none !important;
+    background: #ff7900 !important;
+}
+
+.checkoutBtn:hover {
+    background: #ff7900 !important;
+    opacity: 0.5;
+}

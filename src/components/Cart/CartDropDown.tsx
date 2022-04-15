@@ -9,6 +9,9 @@ import {
 import { SVG } from "../../assets/styles/NavbarStyles";
 import "../../assets/styles/CartMenuStyles.css";
 
+//elements
+import CartContent from "./CartContent";
+
 const CartDropDown = () => {
   return (
     <Menu>
@@ -19,13 +22,11 @@ const CartDropDown = () => {
       </MenuButton>
 
       <MenuList alignItems={"center"}>
-        <Text>Cart</Text>
-        <MenuDivider />
-        <Text>
-          Your Cart is empty Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Quidem optio molestiae nam doloribus quasi possimus voluptates
-          ducimus voluptatem nisi facilis!
+        <Text px={5} fontWeight={"bold"}>
+          Cart
         </Text>
+        <MenuDivider />
+        <CartContent />
       </MenuList>
     </Menu>
   );
