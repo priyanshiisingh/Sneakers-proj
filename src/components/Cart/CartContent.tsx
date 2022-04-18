@@ -42,14 +42,16 @@ const CartContent = () => {
     let total = document.getElementById("cartTotal");
     let visi = document.getElementById("isvisible");
     let Tvisi = document.getElementById("textvisible");
+    let badge = document.getElementById("cartBadge");
 
-    let num, amt, ttl: any;
+    let num, amt, ttl, bad: any;
     if (
       cont !== null &&
       amount !== null &&
       total !== null &&
       visi !== null &&
-      Tvisi !== null
+      Tvisi !== null &&
+      badge !== null
     ) {
       num = parseInt(cont.innerText);
       num = 0;
@@ -57,9 +59,12 @@ const CartContent = () => {
       amt = 0;
       ttl = parseInt(total.innerText);
       ttl = 0;
+      bad = parseInt(total.innerText);
+      bad = 0;
       visi.style.display = "none";
+      badge.style.display = "none";
       Tvisi.style.display = "block";
-      console.log("num, amt, ttl", num, amt, ttl);
+      console.log("num, amt, ttl, bad", num, amt, ttl, bad);
     }
   }
   return (

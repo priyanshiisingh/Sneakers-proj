@@ -120,6 +120,7 @@ const AddToCartBtn = () => {
   const [num, setNum] = React.useState("");
   const [amt, setAmt] = React.useState("");
   const [final, setFinal] = React.useState("");
+  const [cartB, setCartB] = React.useState("");
 
   function Submit() {
     let cont = document.getElementById("quantityId");
@@ -127,31 +128,39 @@ const AddToCartBtn = () => {
     let total = document.getElementById("cartTotal");
     let visi = document.getElementById("isvisible");
     let Tvisi = document.getElementById("textvisible");
+    let badge = document.getElementById("cartBadge");
 
     console.log(cont);
     let val: any;
     let amo: any;
     let calc: any;
-    if (cont !== null && amount !== null && total !== null) {
+    let bad: any;
+    if (cont !== null && amount !== null && total !== null && badge !== null) {
       val = parseInt(cont.innerText);
       amo = parseInt(amount.innerText);
+      bad = parseInt(badge.innerText);
 
       amo = val;
+      bad = amo;
       calc = 125.0 * amo;
 
       amount.innerHTML = amo;
+      badge.innerHTML = bad;
       total.innerText = `$${calc.toFixed(2)}`;
 
       setFinal(calc);
       setAmt(amo);
       setNum(val);
+      setCartB(bad);
 
-      if (visi !== null && Tvisi !== null && amo !== 0) {
+      if (visi !== null && Tvisi !== null && amo !== 0 && bad !== 0) {
         visi.style.display = "block";
         Tvisi.style.display = "none";
-      } else if (visi !== null && Tvisi !== null && amo === 0) {
+        badge.style.display = "block";
+      } else if (visi !== null && Tvisi !== null && amo === 0 && bad === 0) {
         visi.style.display = "none";
         Tvisi.style.display = "block";
+        badge.style.display = "none";
       }
     } else {
       console.log("error");
@@ -161,6 +170,7 @@ const AddToCartBtn = () => {
   console.log("final", final);
   console.log("amt", amt);
   console.log("num", num);
+  console.log("bad", cartB);
   return (
     <ControlBtn>
       <Button

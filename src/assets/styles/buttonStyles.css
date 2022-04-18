@@ -46,3 +46,7 @@
 #textvisible {
     display: block;
 }
+
+#cartBadge {
+    display: none;
+}
